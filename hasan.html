@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="logo hasan 1.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration Form</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f0f0f0; margin: 0; padding: 0;">
+    <header style="background-color: #004d00; padding: 10px 0; text-align: center;">
+        <img src="logo hasan 1.jpg" class="logo" alt="Logo" style="width: 100px; height: auto;">
+    </header>
+    <main style="max-width: 600px; margin: 20px auto; background-color: #fff; padding: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.1); border-radius: 8px;">
+        <h1 style="text-align: center; color: #004d00;">Registration Form</h1>
+        <form id="registrationForm" action="welcome.html" method="get" style="display: flex; flex-direction: column;">
+            <input type="text" name="username" placeholder="Username" required style="padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px;">
+            <input type="password" name="password" placeholder="Password" required style="padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px;">
+            
+            <h3 style="margin-bottom: 10px; color: #004d00;">Select your class</h3>
+            <label for="classVII" style="margin-bottom: 10px;">
+                <input type="radio" value="classVII" name="class" id="classVII" required style="margin-right: 10px;"> Class VII
+            </label>
+            <label for="classVIII" style="margin-bottom: 10px;">
+                <input type="radio" value="classVIII" name="class" id="classVIII" required style="margin-right: 10px;"> Class VIII
+            </label>
+            <label for="classXI" style="margin-bottom: 10px;">
+                <input type="radio" value="classIX" name="class" id="classXI" required style="margin-right: 10px;"> Class XI
+            </label>
+            <label for="classX" style="margin-bottom: 10px;">
+                <input type="radio" value="classX" name="class" id="classX" required style="margin-right: 10px;"> Class X
+            </label>
+
+            <h3 style="margin-bottom: 10px; color: #004d00;">Select your favorites subjects</h3>
+            <label for="math" style="margin-bottom: 10px;">
+                <input type="checkbox" value="math" name="subject" id="math" style="margin-right: 10px;"> Math
+            </label>
+            <label for="english" style="margin-bottom: 10px;">
+                <input type="checkbox" value="english" name="subject" id="english" style="margin-right: 10px;"> English
+            </label>
+            <label for="urdu" style="margin-bottom: 10px;">
+                <input type="checkbox" value="urdu" name="subject" id="urdu" style="margin-right: 10px;"> Urdu
+            </label>
+            <label for="computer" style="margin-bottom: 10px;">
+                <input type="checkbox" value="computer" name="subject" id="computer" style="margin-right: 10px;"> Computer
+            </label>
+            <label for="science" style="margin-bottom: 10px;">
+                <input type="checkbox" value="science" name="subject" id="science" style="margin-right: 10px;"> Science
+            </label>
+
+            <label for="city" style="margin-bottom: 10px; color: #004d00;">Select your city</label>
+            <select name="city" id="city" style="padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px;">
+                <option value="Karachi">Karachi</option>
+                <option value="Islamabad">Islamabad</option>
+                <option value="Lahore">Lahore</option>
+                <option value="Mari">Mari</option>
+                <option value="Kashmir">Kashmir</option>
+            </select>
+
+            <textarea name="feedback" id="feedback" placeholder="Please give your valuable feedback here" rows="5" style="padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px;"></textarea>
+
+            <input type="submit" value="Submit" style="padding: 10px; background-color: #004d00; color: #fff; border: none; border-radius: 4px; cursor: pointer;">
+        </form>
+    </main>
+    <footer style="text-align: center; padding: 10px 0; background-color: #004d00; color: white;">
+        <img src="logo hasan.jpg" alt="Footer Logo" style="height: 50px; width: auto;">
+    </footer>
+</body>
+</html>

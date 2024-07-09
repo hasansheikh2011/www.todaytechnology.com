@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="logo hasan 1.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .hello {
+            display: block;
+            margin: 20px auto;
+            width: 100px;
+            height: auto;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        h2 {
+            color: #004d00;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #004d00;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #003300;
+        }
+        img {
+            margin: 20px auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <img src="logo hasan 1.jpg" class="hello" alt="Logo">
+    <form id="registrationForm" action="explore.html" method="get">
+        <div class="container">
+            <h2>Welcome, <span id="usernameDisplay"></span>!</h2>
+            <p>Thank you for registering. You have successfully created an account.</p>
+            <p>Feel free to explore our website.</p>
+        </div>
+        <script>
+            // Display the username from the URL query parameter (assuming it was passed in the URL)
+            const params = new URLSearchParams(window.location.search);
+            const username = params.get('username');
+            if (username) {
+                document.getElementById('usernameDisplay').textContent = username;
+            } else {
+                document.getElementById('usernameDisplay').textContent = 'Guest';
+            }
+        </script>
+        <input type="submit" value="For more info about Pakistan">
+    </form>
+    <br>
+    <img src="logo hasan.jpg" height="300" alt="Footer Logo">
+</body>
+</html>
